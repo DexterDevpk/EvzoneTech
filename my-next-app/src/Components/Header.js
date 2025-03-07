@@ -1,17 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "./Navbar";
+import "@/app/globals.css";
+
+
+// const isActive = true;
+
 
 export default function Header() {
   return (
-    <div className="relative w-full">
-        <div className=" left-[120px]">
+    <div className="relative w-full mb-[20rem]">
+        <div className="">
       {/* <Navbar/> */}
 
       {/* Hero Section */}
       <div className="relative flex flex-col md:flex-row items-center justify-between px-10 py-24 text-white min-h-screen">
         {/* Left Content */}
-        <div className="w-full md:w-1/2 space-y-6">
+        <div className="w-full w-1/2 space-y-6">
           <h1 className="text-4xl text-white font-bold leading-tight">
             Quality Assurance, Quality Control, and Testing — the Basics of Software Quality Management
           </h1>
@@ -26,16 +31,9 @@ export default function Header() {
         </div>
 
         {/* Right Content - Cut Shape + Image */}
-        <div className="w-full md:w-1/2 relative flex justify-end">
-          <div className="absolute top-0 right-0 w-[60%] h-full bg-[#FFAD00] clip-right-shape"></div>
-          <Image
-            src="/images/warrior.png" // Replace with actual image path
-            alt="Warrior"
-            width={350}
-            height={450}
-            className="relative z-10"
-          />
-        </div>
+        <div className="your-div">
+        <img src="/warrior.png" alt="Warrior" className="h-[80%]" />
+      </div>
       </div>
       </div>
     </div>

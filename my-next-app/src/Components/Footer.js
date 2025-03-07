@@ -5,53 +5,61 @@ export default function Footer() {
   return (
     <>
 
-    <section className="w-full pt-[5rem] pb-10 bg-[#FFAD00] border-2 border-[#222222] shadow-[inset_0px_10px_24px_0px_rgba(0,0,0,1)] p-6 text-white text-lg font-bold text-center">
-      <div className="max-w-7xl mx-auto grid grid-cols-3 gap-8 items-center">
-        {/* Left-aligned Column */}
-        <div className="text-left w-[496px] h-[150px]">
-            <Image
-            src="/images/Vector 1_black.png"
-            width={200}
-            height={200}
-            alt="Footer_Vector"
+<footer className="relative w-full pt-[5rem] pb-10 bg-[#FFAD00] border-2 border-[#222222] shadow-[inset_0px_10px_24px_0px_rgba(0,0,0,1)] p-6 text-white text-lg font-bold text-center">
+  
+  {/* Background Image Positioned to the Right */}
+  <Image 
+    src="/images/footer_bg.png" // Change to your actual image path
+    width={300}
+    height={412}
+    alt="Background Image"
+    className="absolute right-5 bottom-10 opacity-100 mix-blend-multiply pointer-events-none"
+  />
 
-            />
-          {/* <h2 className="text-3xl font-bold text-gray-900">Left Aligned Content</h2> */}
-          <p className="mt-4 text-gray-700">
-          Simplify, Organize, and Beautify with Evzone Tech.
-          </p>
-          {/* <button className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-lg">Learn More</button> */}
-        </div>
+  <div className="max-w-7xl mx-auto px-[10rem] grid grid-cols-3 gap-8 items-center relative">
+    {/* Left-aligned Column */}
+    <div className="text-left w-[496px] h-[150px]">
+      <Image src="/images/Vector 1_black.png" width={200} height={200} alt="Footer_Vector" />
+      <p className="mt-4 text-gray-700">Simplify, Organize, and Beautify with Evzone Tech.</p>
+    </div>
 
-        {/* Right-aligned Columns */}
-        <div className="col-span-2 flex justify-end">
-        <div className="flex justify-between text-[#222222] space-x-10">
-          <div>
-          <h3>Company</h3>
-          <ul>
+    {/* Company & Support Section */}
+    <div className="col-span-2 flex justify-end w-full" dir="ltr">
+      <div className="grid grid-cols-2 gap-20 pl-20 text-[#222222] border-l-2 border-[#222222]">
+        
+        {/* Company Section */}
+        <div className="text-left">
+          <h3 className="font-bold mb-2">Company</h3>
+          <ul className="space-y-1 text-sm font-medium leading-6">
             <li>About Us</li>
             <li>Services</li>
             <li>Portfolio</li>
           </ul>
-          </div>
+        </div>
 
-          <div>
-          <h3>Support</h3>
-          <ul>
+        {/* Support Section */}
+        <div className="text-left">
+          <h3 className="font-bold mb-2">Support</h3>
+          <ul className="space-y-1 text-sm font-medium leading-6">
             <li>Term & Condition</li>
             <li>Privacy Policy</li>
           </ul>
-          </div>
-          
         </div>
-        </div>
+
       </div>
-      <div className="flex grid grid-cols-3 gap-x-2 mt-10 pt-20">
-        <div className="h-1 flex items-center rounded-full w-full bg-[#222222]"></div>
-        <div className=" flex items-center justify-center">&copy; 2023 | Evzone Tech support .  All rights reserved</div>  
-        <div className="h-1 w-full rounded-full bg-[#222222]"></div>
-      </div>
-    </section>
+    </div>
+  </div>
+
+  {/* Footer Divider */}
+  <div className="flex items-center grid grid-cols-3 gap-x-2 mt-10 pt-20">
+    <div className="border border-[#222222] rounded-full w-full"></div>
+    <div className="flex items-center justify-center  font-normal">&copy; 2023 | Evzone Tech Support.<span className="text-[#222222]">All rights reserved</span> </div>
+    <div className="border border-[#222222] rounded-full w-full bg-[#222222]"></div>
+  </div>
+
+</footer>
+
+
     </>
   )
 }

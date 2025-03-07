@@ -9,10 +9,10 @@ const Navbar = () => {
 
   return (
     // {/* Navbar Section */}
-      <nav className="flex justify-between items-center px-8 py-4 bg-transparent shadow-md fixed w-full top-0 z-50">
+      <nav className="flex justify-between items-center px-[5rem] py-4 bg-transparent shadow-md fixed w-full top-0  z-50">
         {/* Logo */}
         <div className="text-2xl font-bold flex items-center space-x-2">
-          <Image src="/images/Vector 1.png" alt="Logo" width={100} height={100} />
+          <Image src="/images/Vector 1.png" alt="Logo" width={150} height={150} />
           {/* <span className="text-gray-900">Evzone Tech</span> */}
         </div>
 
@@ -22,7 +22,7 @@ const Navbar = () => {
             <Link href="#" className="font-bolder text-black">Home</Link>
           </li>
           <li className="hover:text-orange-500 cursor-pointer">
-            <Link href="#">Services</Link>
+            <Link href="#">Portfolio</Link>
           </li>
           <li className="hover:text-orange-500 cursor-pointer">
             <Link href="#">About Us</Link>
