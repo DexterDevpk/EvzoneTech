@@ -50,6 +50,7 @@ body {
 html {
   scrollbar-width: none; /* For Firefox */
   -ms-overflow-style: none; /* For IE and Edge */
+<<<<<<< Updated upstream
 }
 
 .your-div {
@@ -74,3 +75,6 @@ html {
 
 
 
+=======
+}
+>>>>>>> Stashed changes
