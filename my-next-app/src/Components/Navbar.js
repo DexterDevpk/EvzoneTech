@@ -19,8 +19,13 @@ const Navbar = () => {
 
   return (
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     // {/* Navbar Section */}
       <nav className="flex justify-between items-center px-[5rem] py-4 bg-transparent shadow-md fixed w-full top-0  z-50">
+=======
+    <nav className="flex flex-col items-center py-4 bg-transparent fixed w-full top-0 z-50">
+      <div className="flex justify-between items-center w-full max-w-[85%]">
+>>>>>>> Stashed changes
 =======
     <nav className="flex flex-col items-center py-4 bg-transparent fixed w-full top-0 z-50">
       <div className="flex justify-between items-center w-full max-w-[85%]">
@@ -30,6 +35,7 @@ const Navbar = () => {
           <Image src="/images/Vector 1.png" alt="Logo" width={150} height={150} />
         </div>
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         {/* Menu Items */}
         <ul className="hidden md:flex space-x-8 text-[#222222] font-semibold">
@@ -49,6 +55,28 @@ const Navbar = () => {
 
         {/* Contact Button */}
         <button className="hidden md:block px-4 py-2 h-[36px] w-[135px]  rounded-[16px] bg-[#222222] text-white rounded-md font-semibold">
+=======
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex space-x-14 font-semibold">
+          {navLinks.map((link) => (
+            <li key={link.path}>
+              <Link
+                href={link.path}
+                className={`cursor-pointer transition-colors duration-300 ${
+                  router.pathname === link.path
+                    ? "text-orange-500" // Active link color
+                    : "text-white hover:text-orange-500" // Default color with hover effect
+                }`}
+              >
+                {link.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+
+        {/* Contact Button (Desktop) */}
+        <button className="hidden md:block px-4 py-2 h-[36px] w-[135px] rounded-[16px] bg-[#222222] text-white font-semibold">
+>>>>>>> Stashed changes
 =======
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-14 font-semibold">

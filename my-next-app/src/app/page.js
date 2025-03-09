@@ -4,9 +4,15 @@ import { useState, useEffect } from "react";
 import Preloader from "@/Components/Preloader"; // Import the Preloader
 import Header from "@/Components/Header";
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import Navbar from "@/Components/Navbar";
 import Services from "@/Components/Services";
 import Image from "next/image";
+=======
+import Services from "@/Components/Services";
+import Testimonials from "@/Components/Testimonials";
+import Our_projects from "@/Components/Our_projects";
+>>>>>>> Stashed changes
 =======
 import Services from "@/Components/Services";
 import Testimonials from "@/Components/Testimonials";
@@ -24,6 +30,7 @@ export default function Home() {
   return (
     <>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <div className="bg-[#222222] ">
     <Navbar/>
     <Header/>
@@ -31,6 +38,8 @@ export default function Home() {
     <Footer/>
     </div>
 =======
+=======
+>>>>>>> Stashed changes
       {loading ? (
         <Preloader /> // Show Preloader first
       ) : (
@@ -41,6 +50,9 @@ export default function Home() {
           <Our_projects />
         </div>
       )}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     </>
   );

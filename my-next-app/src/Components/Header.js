@@ -1,9 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import Navbar from "./Navbar";
 import "@/app/globals.css";
 =======
+=======
+>>>>>>> Stashed changes
 import CutShapeSvg from "./CutShapeSvg";
 // import Navbar from "./Navbar";
 // import "@/app/globals.css";
@@ -29,7 +32,11 @@ export default function Header() {
 
       {/* Hero Section */}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <div className="relative flex flex-col md:flex-row items-center justify-between px-10 py-24 text-white min-h-screen">
+=======
+      <div className="relative  flex flex-col md:flex-row items-center justify-between px-15 py-24 text-white min-h-screen">
+>>>>>>> Stashed changes
 =======
       <div className="relative  flex flex-col md:flex-row items-center justify-between px-15 py-24 text-white min-h-screen">
 >>>>>>> Stashed changes
@@ -49,12 +56,15 @@ export default function Header() {
         </div>
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         {/* Right Content - Cut Shape + Image */}
         <div className="your-div">
         <img src="/warrior.png" alt="Warrior" className="h-[80%]" />
       </div>
       </div>
 =======
+=======
+>>>>>>> Stashed changes
        <div className="w-full h-[60%] absolute right-0 top-[15rem] flex justify-end items-center">
   {/* SVG Cut Shape (Aligned to the Right Border) */}
   <CutShapeSvg className="absolute top-0 right-0 w-full h-full z-0" />
@@ -71,6 +81,9 @@ export default function Header() {
 </div>
 
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       </div>
     </div>
