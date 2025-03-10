@@ -50,11 +50,11 @@ export default function Our_projects() {
     <section className="w-full py-16 px-6  text-white">
       {/* Title */}
       
-      <div className="text-center mb-12">
-        <h2 className="text-lg font-semibold tracking-wide uppercase opacity-80">
+      <div className="text-center mb-12 gap-y-10">
+        <h2 className="text-4xl font-semibold tracking-wide uppercase opacity-80">
           Our Projects
         </h2>
-        <h3 className="text-4xl font-bold">We’re Dedicated to Exceeding Your Expectations</h3>
+        <h3 className="text-lg font-bold">We’re Dedicated to Exceeding Your Expectations</h3>
       </div>
 
       {/* Projects Container */}
@@ -85,7 +85,7 @@ export default function Our_projects() {
               {/* GitHub Button */}
               <button
                 // style={{ boxShadow: "3px 5px 12px 5px rgb(43, 41, 41)" }}
-                className={`mt-4 px-5 py-2 rounded-lg font-medium ${project.buttonBg} hover:opacity-80 transition`}
+                className={`mt-4 px-5 py-2 rounded-lg font-medium ${project.buttonBg} hover:bg-red-600 transition`}
               >
                 GitHub
               </button>

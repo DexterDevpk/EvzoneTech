@@ -10,6 +10,17 @@ const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const router = useRouter(); // Get current route
 
+  // Define color schemes for different pages
+  const pageColors = {
+    "/": { bgColor: "bg-transparent", textColor: "text-white", hoverColor: "hover:text-[#222222]" },
+    "/aboutus": { bgColor: "bg-[#f3f3f3]", textColor: "text-black", hoverColor: "hover:text-[#222222]" },
+    "/portfolio": { bgColor: "bg-[#1a1a1a]", textColor: "text-gray-300", hoverColor: "hover:text-[#222222]" },
+    "/privacy": { bgColor: "bg-[#333333]", textColor: "text-yellow-400", hoverColor: "hover:text-[#222222]" },
+  };
+
+  // Get current page color scheme or default to home
+  const { bgColor, textColor, hoverColor } = pageColors[router.pathname] || pageColors["/"];
+
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "Portfolio", path: "/portfolio" },
@@ -18,55 +29,20 @@ const Navbar = () => {
   ];
 
   return (
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    // {/* Navbar Section */}
-      <nav className="flex justify-between items-center px-[5rem] py-4 bg-transparent shadow-md fixed w-full top-0  z-50">
-=======
-    <nav className="flex flex-col items-center py-4 bg-transparent fixed w-full top-0 z-50">
+    <nav className={`flex flex-col items-center py-4 fixed w-full top-0 z-50 transition-all duration-300 ${bgColor}`}>
       <div className="flex justify-between items-center w-full max-w-[85%]">
->>>>>>> Stashed changes
-=======
-    <nav className="flex flex-col items-center py-4 bg-transparent fixed w-full top-0 z-50">
-      <div className="flex justify-between items-center w-full max-w-[85%]">
->>>>>>> Stashed changes
         {/* Logo */}
         <div className="flex justify-center items-center space-x-2">
           <Image src="/images/Vector 1.png" alt="Logo" width={150} height={150} />
         </div>
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        {/* Menu Items */}
-        <ul className="hidden md:flex space-x-8 text-[#222222] font-semibold">
-          <li className="hover:text-orange-500 cursor-pointer">
-            <Link href="#" className="font-bolder text-black">Home</Link>
-          </li>
-          <li className="hover:text-orange-500 cursor-pointer">
-            <Link href="#">Portfolio</Link>
-          </li>
-          <li className="hover:text-orange-500 cursor-pointer">
-            <Link href="#">About Us</Link>
-          </li>
-          <li className="hover:text-orange-500 cursor-pointer">
-            <Link href="#">Privacy Policy</Link>
-          </li>
-        </ul>
-
-        {/* Contact Button */}
-        <button className="hidden md:block px-4 py-2 h-[36px] w-[135px]  rounded-[16px] bg-[#222222] text-white rounded-md font-semibold">
-=======
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-14 font-semibold">
           {navLinks.map((link) => (
             <li key={link.path}>
               <Link
                 href={link.path}
-                className={`cursor-pointer transition-colors duration-300 ${
-                  router.pathname === link.path
-                    ? "text-orange-500" // Active link color
-                    : "text-white hover:text-orange-500" // Default color with hover effect
-                }`}
+                className={`cursor-pointer transition-colors duration-300 ${textColor} ${hoverColor}`}
               >
                 {link.name}
               </Link>
@@ -75,30 +51,7 @@ const Navbar = () => {
         </ul>
 
         {/* Contact Button (Desktop) */}
-        <button className="hidden md:block px-4 py-2 h-[36px] w-[135px] rounded-[16px] bg-[#222222] text-white font-semibold">
->>>>>>> Stashed changes
-=======
-        {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-14 font-semibold">
-          {navLinks.map((link) => (
-            <li key={link.path}>
-              <Link
-                href={link.path}
-                className={`cursor-pointer transition-colors duration-300 ${
-                  router.pathname === link.path
-                    ? "text-orange-500" // Active link color
-                    : "text-white hover:text-orange-500" // Default color with hover effect
-                }`}
-              >
-                {link.name}
-              </Link>
-            </li>
-          ))}
-        </ul>
-
-        {/* Contact Button (Desktop) */}
-        <button className="hidden md:block px-4 py-2 h-[36px] w-[135px] rounded-[16px] bg-[#222222] text-white font-semibold">
->>>>>>> Stashed changes
+        <button className={`hidden md:block px-4 py-2 h-[36px] w-[135px] rounded-[16px] text-white font-semibold bg-[#222222]`}>
           Contact Us
         </button>
 
@@ -116,23 +69,18 @@ const Navbar = () => {
 
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
-        <div className="absolute top-16 left-0 w-full bg-[#222222] text-white p-5 flex flex-col items-center space-y-4 shadow-lg md:hidden transition-all duration-300">
+        <div className={`absolute top-16 left-0 w-full p-5 flex flex-col items-center space-y-4 shadow-lg md:hidden transition-all duration-300 ${bgColor}`}>
           {navLinks.map((link) => (
             <Link
               key={link.path}
               href={link.path}
-              className={`transition-colors duration-300 ${
-                router.pathname === link.path ? "text-orange-500" : "hover:text-orange-500"
-              }`}
+              className={`transition-colors duration-300 ${textColor} ${hoverColor}`}
               onClick={() => setMobileMenuOpen(false)}
             >
               {link.name}
             </Link>
           ))}
-          <button
-            className="px-4 py-2 h-[36px] w-[135px] rounded-[16px] bg-orange-500 text-white font-semibold"
-            onClick={() => setMobileMenuOpen(false)}
-          >
+          <button className="px-4 py-2 h-[36px] w-[135px] rounded-[16px] bg-orange-500 text-white font-semibold" onClick={() => setMobileMenuOpen(false)}>
             Contact Us
           </button>
         </div>
