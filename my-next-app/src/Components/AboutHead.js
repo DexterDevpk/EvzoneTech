@@ -11,7 +11,7 @@ export default function AboutHead() {
       {/* Background Image with Dull Brightness */}
       <div className="absolute inset-0">
         <img
-          src="/Aboutus/head.png"
+          src="/Aboutus/head_new.png"
           alt="Background"
           className="w-full h-full object-cover brightness-60"
         />

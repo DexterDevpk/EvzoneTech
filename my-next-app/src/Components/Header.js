@@ -61,7 +61,7 @@ export default function Header() {
             alt="Warrior"
             width={300}
             height={2000}
-            className="absolute top-0 right-0 h-full z-50 object-cover"
+            className="absolute top-0 right-0 h-full z-10 object-cover"
           />
         </div>
       </div>

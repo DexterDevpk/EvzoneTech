@@ -3,7 +3,10 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="relative w-full pt-[5rem] pb-10 bg-[#FFAD00] border-2 border-[#222222] shadow-[inset_0px_10px_24px_0px_rgba(0,0,0,1)] p-6 text-white text-lg font-bold text-center">
+    <footer
+  className="relative w-full pt-[5rem] pb-10 bg-[#FFAD00] border-2 border-[#222222] shadow-[inset_0px_10px_24px_0px_rgba(0,0,0,1)] p-6 text-white text-lg font-bold text-center"
+  style={{ backgroundImage: "url('/images/footer.png')", backgroundSize: "cover", backgroundPosition: "center" }}
+>
       {/* Background Image Positioned to the Right */}
       <Image 
         src="/images/footer_bg.png" 

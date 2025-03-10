@@ -8,25 +8,25 @@ import Testimonials from "@/Components/Testimonials";
 import OurProjects from "@/Components/OurProjects";
 
 export default function Home() {
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 3000); // Preloader for 3 sec
-    return () => clearTimeout(timer);
-  }, []);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => setLoading(false), 3000); // Preloader for 3 sec
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   return (
     <>
-      {loading ? (
-        <Preloader /> // Show Preloader first
-      ) : (
+      {/* {loading ? (
+        <Preloader />
+      ) : ( */}
         <div className="bg-[#222222]">
           <Header />
           <Services />
           <Testimonials />
           <OurProjects />
         </div> 
-      )}
+      {/* )} */}
     </>
   );
 }

@@ -51,7 +51,7 @@ const Navbar = () => {
         </ul>
 
         {/* Contact Button (Desktop) */}
-        <button className={`hidden md:block px-4 py-2 h-[36px] w-[135px] rounded-[16px] text-white font-semibold bg-[#222222]`}>
+        <button className={`hidden md:block px-4 py-2 h-[36px] w-[135px] rounded-[16px] text-white z-50 font-semibold bg-[#222222]`}>
           Contact Us
         </button>
 
