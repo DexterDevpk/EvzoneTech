@@ -65,7 +65,7 @@ const Navbar = () => {
       </div>
 
       {/* Shortened Bottom Border */}
-      <div className="w-[85%] border-b border-[#F9E68C] mt-2"></div>
+      <div className="w-full border-b border-[#F9E68C] mt-2"></div>
 
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
