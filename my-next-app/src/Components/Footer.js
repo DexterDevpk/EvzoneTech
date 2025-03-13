@@ -52,7 +52,7 @@ export default function Footer() {
       {/* Footer Divider */}
       <div className="flex items-center grid grid-cols-3 gap-x-2 mt-10 pt-20">
         <div className="border border-[#222222] rounded-full w-full"></div>
-        <div className="flex items-center justify-center font-normal">&copy; 2023 | Evzone Tech Support. <span className="text-[#222222]">All rights reserved</span></div>
+        <div className="flex items-center justify-center font-normal text-[#222222]">&copy; 2023 | Evzone Tech Support.All rights reserved</div>
         <div className="border border-[#222222] rounded-full w-full bg-[#222222]"></div>
       </div>
     </footer>

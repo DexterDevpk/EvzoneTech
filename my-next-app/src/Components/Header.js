@@ -16,8 +16,8 @@ export default function Header() {
       {/* Hero Section */}
       <div className="relative flex flex-col md:flex-row items-center justify-between px-10 py-24 text-white min-h-screen">
         {/* Left Content */}
-        <div className="w-[50%] space-y-6">
-          <h1 className="text-4xl text-white font-bold leading-tight">
+        <div className="w-[50%]  space-y-6">
+          <h1 className="text-5xl text-white pt-30 font-bold leading-tight">
             {headingText.map((text, index) => (
               <span key={index}>
                 {text}
@@ -53,16 +53,33 @@ export default function Header() {
         </div>
 
         {/* Right Content - Cut Shape + Image */}
-        <div className="w-full h-[60%] absolute right-0 top-[15rem] flex justify-end items-center">
-          <CutShapeSvg className="absolute top-0 right-0 w-full h-full z-0" />
+        <div className="w-full h-full absolute right-0  flex justify-end items-center">
+          <CutShapeSvg className=" top-0 right-0 w-full h-full z-10" />
 
           <Image
-            src="/images/Header_img.png"
-            alt="Warrior"
-            width={300}
-            height={2000}
-            className="absolute top-0 right-0 h-full z-10 object-cover"
-          />
+  src="/images/Header_img.png"
+  alt="Warrior"
+  width={600} 
+  height={500} // Adjust height proportionally
+  layout="intrinsic" // Ensures full display
+  className="absolute top-20 right-20 h-full z-50 object-contain"
+/>
+
+
+<div className="absolute top-0 left-10 bg-white p-2 rounded-full shadow-lg flex items-center">
+        <span className="bg-purple-600 text-white px-3 py-1 rounded-full">X</span>
+      </div>
+      <div className="absolute top-10 right-50 bg-white p-2 rounded-full shadow-lg flex items-center">
+        <span className="bg-purple-600 text-white px-3 py-1 rounded-full">Y</span>
+        <img src="/path/to/avatar.png" alt="Avatar" className="w-6 h-6 rounded-full ml-2" />
+      </div>
+      <div className="absolute bottom-5 right-20 bg-white p-2 rounded-full shadow-lg flex items-center">
+        <span className="bg-pink-600 text-white px-3 py-1 rounded-full">Z</span>
+        <img src="/path/to/avatar2.png" alt="Avatar" className="w-6 h-6 rounded-full ml-2" />
+        <span className="bg-purple-600 text-white px-3 py-1 rounded-full">A</span>
+      </div>
+
+
         </div>
       </div>
     </div>
