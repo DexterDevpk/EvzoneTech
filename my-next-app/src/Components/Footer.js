@@ -13,7 +13,7 @@ export default function Footer() {
         width={300}
         height={412}
         alt="Background Image"
-        className="absolute right-5 bottom-10 opacity-100 mix-blend-multiply pointer-events-none"
+        className="absolute right-5 bottom-10 opacity-120 mix-blend-multiply pointer-events-none"
       />
 
       <div className="max-w-7xl mx-auto px-[10rem] grid grid-cols-3 gap-8 items-center relative">

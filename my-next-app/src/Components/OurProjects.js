@@ -16,10 +16,10 @@ export default function Our_projects({ showAll = false }) {
           strategy, and unwavering commitment.
         </p>
       ),
-      logo: "/images/projects_1.png",
-      bgColor: "bg-[#FFAD00]",
-      textColor: "text-[#ffffff]",
-      buttonBg: "shadow-xl rounded-full bg-[#222222]",
+      logo: "/images/projects_2.png",
+      bgColor: "bg-[#222222]",
+      textColor: "text-[#FFAD00]",
+      buttonBg: "shadow-xl text-[#222222] bg-[#FFAD00]",
     },
     {
       name: (
@@ -33,8 +33,8 @@ export default function Our_projects({ showAll = false }) {
       ),
       logo: "/images/projects_2.png",
       bgColor: "bg-[#222222]",
-      textColor: "text-white",
-      buttonBg: "shadow-xl bg-[#FFAD00]",
+      textColor: "text-[#FFAD00]",
+      buttonBg: "shadow-xl text-[#222222] bg-[#FFAD00]",
     },
   ];
 
@@ -65,7 +65,7 @@ export default function Our_projects({ showAll = false }) {
   return (
     <section className="w-full py-16 px-6 text-white">
       <div className="text-center mb-12">
-        <h2 className="text-4xl font-semibold tracking-wide uppercase opacity-80">
+        <h2 className="text-4xl font-semibold tracking-wider uppercase opacity-80">
           Our Projects
         </h2>
         <h3 className="text-lg font-bold">We’re Dedicated to Exceeding Your Expectations</h3>
@@ -74,27 +74,49 @@ export default function Our_projects({ showAll = false }) {
       <div className="space-y-8 max-w-6xl mx-auto">
         {projects.map((project, index) => (
           <div
-            key={index}
-            className={`relative w-full md:w-[1200px] h-[300px] flex flex-col shadow-xl md:flex-row items-center justify-between p-8 md:p-12 rounded-xl ${project.bgColor}`}
-            style={{ boxShadow: "3px 10px 12px 5px rgb(8, 8, 8)" }}
-          >
-            <div className="w-1/3 flex justify-center">
-              <Image src={project.logo} alt="Project Logo" width={280} height={200} className="object-contain" />
-            </div>
-
-            <div className={`w-2/3 ${project.textColor} text-start`}>
-              <div className="text-2xl md:text-3xl font-bold">{project.name}</div>
-              <span className="text-lg mt-2">{project.description}</span>
-              <button className={`mt-4 px-5 py-2 rounded-lg font-medium ${project.buttonBg} hover:bg-red-600 transition`}>GitHub</button>
-            </div>
+          key={index}
+          className={`relative w-full md:w-[1200px] h-[300px] flex flex-col shadow-xl md:flex-row items-center justify-between p-8 md:p-12 rounded-xl ${project.bgColor}`}
+          style={{ boxShadow: "3px 10px 12px 5px rgb(8, 8, 8)" }}
+        >
+          {/* Background Image (More Prominent) */}
+          <Image
+            src="/images/footer_bg.png"
+            width={250}  // Increased width
+            height={200} // Increased height
+            alt="Background Image"
+            className="absolute right-5 bottom-3 opacity-150 mix-blend-normal pointer-events-none"
+          />
+        
+          {/* Project Logo */}
+          <div className="w-1/3 flex justify-center">
+            <Image
+              src={project.logo}
+              alt="Project Logo"
+              width={280}
+              height={200}
+              className="object-contain"
+            />
           </div>
+        
+          {/* Project Details */}
+          <div className={`w-2/3 ${project.textColor} text-start pl-20 space-y-4`}>
+            <div className="text-2xl md:text-3xl font-bold">{project.name}</div>
+            <span className="text-lg mt-2">{project.description}</span>
+            <button
+              className={`mt-4 px-6 py-1 rounded-full tracking-wider font-medium ${project.buttonBg} hover:bg-red-600 transition`}
+            >
+              GitHub
+            </button>
+          </div>
+        </div>
+        
         ))}
       </div>
 
       {!showAll && (
         <div className="mt-8 text-center">
           <button
-            className="px-6 py-2 w-[135px] text-lg font-semibold bg-[#FFAD00] text-white rounded-full shadow-lg cursor-pointer hover:bg-yellow-500 transition"
+            className="px-6 py-1 w-[135px] text-lg font-semibold bg-[#FFAD00] text-[#222222] rounded-full shadow-lg cursor-pointer hover:bg-yellow-500 transition"
             onClick={() => router.push("/portfolio")}
           >
             View All

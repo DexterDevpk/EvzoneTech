@@ -26,13 +26,13 @@ export default function Header() {
             ))}
           </h1>
 
-          <div className="flex space-x-4 relative z-50">
+          <div className="flex pt-6 space-x-8 pl-10 relative z-10">
   {/* About Us Button */}
   <a href="/aboutus" className="no-underline">
     <button
-      className="px-6 py-3 rounded-xl font-semibold cursor-pointer bg-gradient-to-r from-[#222222] to-[#FFAD00] 
-      hover:from-[#FFAD00] hover:to-[#222222] hover:text-[#222222] transition-all duration-300"
-      style={{ boxShadow: "3px 5px 4px 5px rgb(8, 8, 8)" }}
+      className="px-10 py-3 rounded-xl font-semibold cursor-pointer bg-gradient-to-r from-[#222222] to-[#FFAD00] 
+      hover:from-[#FFAD00] hover:to-[#222222]  transition-all duration-300"
+      style={{ boxShadow: "2px 3px 3px 2px rgb(8, 8, 8)"}}
     >
       About Us
     </button>
@@ -41,9 +41,9 @@ export default function Header() {
   {/* Portfolio Button */}
   <a href="/portfolio" className="no-underline">
     <button
-      className="px-6 py-3 text-white rounded-xl cursor-pointer font-semibold bg-gradient-to-r from-[#222222] to-[#FFAD00] 
-      hover:from-[#FFAD00] hover:to-[#222222] hover:text-[#222222] transition-all duration-300"
-      style={{ boxShadow: "3px 5px 4px 5px rgb(8, 8, 8)" }}
+      className="px-10 py-3 text-white rounded-xl cursor-pointer font-semibold bg-gradient-to-r from-[#222222] to-[#FFAD00] 
+      hover:from-[#FFAD00] hover:to-[#222222] transition-all duration-300"
+      style={{ boxShadow: "2px 3px 3px 2px rgb(8, 8, 8)" }}
     >
       Portfolio
     </button>
@@ -62,7 +62,7 @@ export default function Header() {
   width={600} 
   height={500} // Adjust height proportionally
   layout="intrinsic" // Ensures full display
-  className="absolute top-20 right-20 h-full z-50 object-contain"
+  className="absolute top-20 right-20 h-full z-10 object-contain"
 />
 
 
