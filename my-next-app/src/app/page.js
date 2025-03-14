@@ -3,9 +3,17 @@
 import { useState, useEffect } from "react";
 import Preloader from "@/Components/Preloader"; 
 import Header from "@/Components/Header";
+<<<<<<< HEAD
 import Services from "@/Components/Services";
 import Testimonials from "@/Components/Testimonials";
 import OurProjects from "@/Components/OurProjects";
+=======
+import Navbar from "@/Components/Navbar";
+import Our_projects from "@/Components/Our_projects";
+import Services from "@/Components/Services";
+import Testimonials from "@/Components/Testimonials";
+import Image from "next/image";
+>>>>>>> main
 
 export default function Home() {
   // const [loading, setLoading] = useState(true);
@@ -17,6 +25,7 @@ export default function Home() {
 
   return (
     <>
+<<<<<<< HEAD
       {/* {loading ? (
         <Preloader />
       ) : ( */}
@@ -27,6 +36,16 @@ export default function Home() {
           <OurProjects />
         </div> 
       {/* )} */}
+=======
+    <div className="bg-[#222222] ">
+    <Navbar/>
+    <Header/>
+    <Services/>
+    <Testimonials/>
+    <Our_projects/>
+    <Footer/>
+    </div>
+>>>>>>> main
     </>
   );
 }

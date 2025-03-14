@@ -40,16 +40,22 @@ const Navbar = () => {
   ];
 
   return (
+<<<<<<< HEAD
     <nav
       className={`flex flex-col items-center py-4 fixed w-full top-0 z-50 transition-all duration-300 
         ${bgColor} ${isScrolled ? "backdrop-blur-lg bg-opacity-80 shadow-md" : ""}`}
     >
       <div className="flex justify-between items-center w-full max-w-[85%]">
+=======
+    // {/* Navbar Section */}
+      <nav className="flex justify-between items-center px-[6rem] py-4 bg-transparent shadow-md fixed w-full top-0  z-50">
+>>>>>>> main
         {/* Logo */}
         <div className="flex justify-center items-center space-x-2">
           <Image src="/images/Vector 1.png" alt="Logo" width={100} height={100} />
         </div>
 
+<<<<<<< HEAD
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-14 font-semibold">
           {navLinks.map((link) => (
@@ -74,6 +80,26 @@ const Navbar = () => {
 
         {/* Contact Button (Desktop) */}
         <button className="hidden md:block px-4 py-2 h-[36px] w-[135px] rounded-[16px] text-white z-50 font-semibold bg-[#222222]">
+=======
+        {/* Menu Items */}
+        <ul className="hidden md:flex space-x-14 text-[#222222] font-semibold">
+          <li className=" text-white hover:text-orange-500 cursor-pointer">
+            <Link href="#" className="font-bolder text-white">Home</Link>
+          </li>
+          <li className="text-white hover:text-orange-500 cursor-pointer">
+            <Link href="#">Portfolio</Link>
+          </li>
+          <li className="text-white hover:text-orange-500 cursor-pointer">
+            <Link href="#">About Us</Link>
+          </li>
+          <li className="text-white hover:text-orange-500 cursor-pointer">
+            <Link href="#">Privacy Policy</Link>
+          </li>
+        </ul>
+
+        {/* Contact Button */}
+        <button className="hidden md:block px-4 py-2 h-[36px] w-[135px]  rounded-[16px] bg-[#222222] text-white  font-semibold">
+>>>>>>> main
           Contact Us
         </button>
 

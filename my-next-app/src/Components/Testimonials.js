@@ -63,7 +63,11 @@ export default function Testimonials() {
   };
 
   return (
+<<<<<<< HEAD
     <div className="relative w-full h-[500px] py-10 my-10 px-6 bg-[linear-gradient(114.53deg,#222222_0%,#FFAD00_122.58%)] text-white">
+=======
+    <div className="relative w-full py-16 my-10 px-6 bg-[linear-gradient(114.53deg,#222222_0%,#FFAD00_122.58%)] text-white">
+>>>>>>> main
       {/* Title */}
       <div className="text-center mb-10">
         <h3 className="text-lg font-semibold tracking-wide uppercase opacity-70">
@@ -128,4 +132,8 @@ export default function Testimonials() {
       
     </div>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> main
