@@ -24,6 +24,8 @@ body {
   color: var(--foreground);
   font-family: 'Tactic Sans', sans-serif;
 }
+<<<<<<< HEAD
+=======
 
 .curved-section {
   background: #f4a900; /* Yellow Background */
@@ -42,6 +44,7 @@ body {
   justify-content: center;
   overflow: hidden;
 }
+>>>>>>> main
 
 /* Hide scrollbar for all browsers */
 ::-webkit-scrollbar {
@@ -52,9 +55,12 @@ html {
   scrollbar-width: none; /* For Firefox */
   -ms-overflow-style: none; /* For IE and Edge */
 }
+<<<<<<< HEAD
+=======
 
 
 
 
 
 
+>>>>>>> main

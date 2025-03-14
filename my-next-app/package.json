@@ -9,6 +9,10 @@
     "export": "next export"
   },
   "dependencies": {
+    "@next/font": "^14.2.15",
+    "framer-motion": "^12.4.11",
+    "lucide-react": "^0.477.0",
+    "next": "15.2.1",
     "framer-motion": "^12.4.10",
     "lucide-react": "^0.477.0",
     "next": "15.2.1",
